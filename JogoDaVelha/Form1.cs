@@ -35,7 +35,6 @@ namespace JogoDaVelha
                 {
                     MessageBox.Show("O jogador com o 'O' venceu a partida!");
                 }
-
             }
 
             //Colunas
@@ -101,53 +100,29 @@ namespace JogoDaVelha
             BotaoPadrao(button1, 0, 0);
         }
 
-        //if (Resultado[0, 0] != ResultClic.O && Resultado[0, 0] != ResultClic.X) 
-        //{
-        //    if (Turno == true)
-        //    {
-        //        button1.Text = "X";
-        //        Turno = false;
-        //        Resultado[0, 0] = ResultClic.X;
-        //    }
-        //    else
-        //    {
-        //        button1.Text = "O";
-        //        Turno = true;
-        //        Resultado[0, 0] = ResultClic.O;
-        //    }
-        //}
-
-
         private void button2_Click(object sender, EventArgs e)
         {
-
             BotaoPadrao(button2, 0, 1);
-
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             BotaoPadrao(button3, 0, 2);
-
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             BotaoPadrao(button4, 1, 0);
-
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             BotaoPadrao(button5, 1, 1);
-
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             BotaoPadrao(button6, 1, 2);
-
         }
 
         private void button7_Click(object sender, EventArgs e)
