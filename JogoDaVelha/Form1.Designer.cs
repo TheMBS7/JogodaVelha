@@ -37,13 +37,17 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.lblVitoriaO = new System.Windows.Forms.Label();
+            this.lblP2 = new System.Windows.Forms.Label();
+            this.lblVitoriaX = new System.Windows.Forms.Label();
+            this.lblP1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(159, 57);
+            this.button1.Location = new System.Drawing.Point(29, 26);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(183, 170);
             this.button1.TabIndex = 0;
@@ -54,7 +58,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(369, 57);
+            this.button2.Location = new System.Drawing.Point(239, 26);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(183, 170);
             this.button2.TabIndex = 0;
@@ -65,7 +69,7 @@
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(578, 57);
+            this.button3.Location = new System.Drawing.Point(448, 26);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(183, 170);
             this.button3.TabIndex = 0;
@@ -76,7 +80,7 @@
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(159, 259);
+            this.button4.Location = new System.Drawing.Point(29, 228);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(183, 170);
             this.button4.TabIndex = 0;
@@ -87,7 +91,7 @@
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(369, 259);
+            this.button5.Location = new System.Drawing.Point(239, 228);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(183, 170);
             this.button5.TabIndex = 0;
@@ -98,7 +102,7 @@
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button6.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(578, 259);
+            this.button6.Location = new System.Drawing.Point(448, 228);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(183, 170);
             this.button6.TabIndex = 0;
@@ -109,7 +113,7 @@
             // 
             this.button7.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button7.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(159, 459);
+            this.button7.Location = new System.Drawing.Point(29, 428);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(183, 170);
             this.button7.TabIndex = 0;
@@ -120,7 +124,7 @@
             // 
             this.button8.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button8.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button8.Location = new System.Drawing.Point(369, 459);
+            this.button8.Location = new System.Drawing.Point(239, 428);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(183, 170);
             this.button8.TabIndex = 0;
@@ -131,18 +135,63 @@
             // 
             this.button9.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button9.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button9.Location = new System.Drawing.Point(578, 459);
+            this.button9.Location = new System.Drawing.Point(448, 428);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(183, 170);
             this.button9.TabIndex = 0;
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // lblVitoriaO
+            // 
+            this.lblVitoriaO.AutoSize = true;
+            this.lblVitoriaO.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblVitoriaO.Location = new System.Drawing.Point(448, 615);
+            this.lblVitoriaO.Name = "lblVitoriaO";
+            this.lblVitoriaO.Size = new System.Drawing.Size(179, 37);
+            this.lblVitoriaO.TabIndex = 1;
+            this.lblVitoriaO.Text = "Vitórias do O:";
+            // 
+            // lblP2
+            // 
+            this.lblP2.AutoSize = true;
+            this.lblP2.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblP2.Location = new System.Drawing.Point(512, 661);
+            this.lblP2.Name = "lblP2";
+            this.lblP2.Size = new System.Drawing.Size(59, 72);
+            this.lblP2.TabIndex = 2;
+            this.lblP2.Text = "0";
+            // 
+            // lblVitoriaX
+            // 
+            this.lblVitoriaX.AutoSize = true;
+            this.lblVitoriaX.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblVitoriaX.Location = new System.Drawing.Point(29, 615);
+            this.lblVitoriaX.Name = "lblVitoriaX";
+            this.lblVitoriaX.Size = new System.Drawing.Size(175, 37);
+            this.lblVitoriaX.TabIndex = 1;
+            this.lblVitoriaX.Text = "Vitórias do X:";
+            // 
+            // lblP1
+            // 
+            this.lblP1.AutoSize = true;
+            this.lblP1.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblP1.Location = new System.Drawing.Point(84, 661);
+            this.lblP1.Name = "lblP1";
+            this.lblP1.Size = new System.Drawing.Size(59, 72);
+            this.lblP1.TabIndex = 2;
+            this.lblP1.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 691);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(660, 746);
+            this.Controls.Add(this.lblP1);
+            this.Controls.Add(this.lblVitoriaX);
+            this.Controls.Add(this.lblP2);
+            this.Controls.Add(this.lblVitoriaO);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button6);
@@ -158,6 +207,7 @@
             this.Text = "Jogo da Velha";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -172,5 +222,9 @@
         private Button button7;
         private Button button8;
         private Button button9;
+        private Label lblVitoriaO;
+        private Label lblP2;
+        private Label lblVitoriaX;
+        private Label lblP1;
     }
 }

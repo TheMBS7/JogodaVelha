@@ -11,7 +11,8 @@ namespace JogoDaVelha
         {
 
         }
-
+        int ContVitoriasO = 0;
+        int ContVitoriasX = 0;
         bool Turno = true;
         ResultClic[,] Resultado = new ResultClic[3, 3];
         public enum ResultClic
@@ -41,6 +42,17 @@ namespace JogoDaVelha
         {
             
             DialogResult ResultadoDialogo = MessageBox.Show($"O jogador com o '{quemGanhou}' venceu a partida!");
+
+            if(quemGanhou == "X")
+            {
+                ContVitoriasX++;
+                lblP1.Text = ContVitoriasX.ToString();
+            }
+            else
+            {
+                ContVitoriasO++;
+                lblP2.Text = ContVitoriasO.ToString();
+            }
             if (ResultadoDialogo == DialogResult.OK)
             {
                 Reset();
@@ -49,18 +61,19 @@ namespace JogoDaVelha
     
         public void Vitoria()
         {
-           
             //Linhas
             for (int b = 0; b < 3; b++)
             {
                 if (Resultado[b, 0] == ResultClic.X && Resultado[b, 1] == ResultClic.X && Resultado[b, 2] == ResultClic.X)
                 {
                     MensagemVitoria("X");
+                    
                 }
 
                 else if (Resultado[b, 0] == ResultClic.O && Resultado[b, 1] == ResultClic.O && Resultado[b, 2] == ResultClic.O)
                 {
                     MensagemVitoria("O");
+                    
                 }
             }
 
@@ -70,11 +83,13 @@ namespace JogoDaVelha
                 if (Resultado[0, b] == ResultClic.X && Resultado[1, b] == ResultClic.X && Resultado[2, b] == ResultClic.X)
                 {
                     MensagemVitoria("X");
+                    
                 }
 
                 else if (Resultado[0, b] == ResultClic.O && Resultado[1, b] == ResultClic.O && Resultado[2, b] == ResultClic.O)
                 {
                     MensagemVitoria("O");
+                    
                 }
             }
 
@@ -82,20 +97,24 @@ namespace JogoDaVelha
             if (Resultado[0, 0] == ResultClic.X && Resultado[1, 1] == ResultClic.X && Resultado[2, 2] == ResultClic.X)
             {
                 MensagemVitoria("X");
+                
             }
             else if (Resultado[0, 0] == ResultClic.O && Resultado[1, 1] == ResultClic.O && Resultado[2, 2] == ResultClic.O)
             {
                 MensagemVitoria("O");
+                
             }
 
             //Diagonal /
             else if (Resultado[0, 2] == ResultClic.X && Resultado[1, 1] == ResultClic.X && Resultado[2, 0] == ResultClic.X)
             {
                 MensagemVitoria("X");
+                
             }
             else if (Resultado[0, 2] == ResultClic.O && Resultado[1, 1] == ResultClic.O && Resultado[2, 0] == ResultClic.O)
             {
                 MensagemVitoria("O");
+                
             }
         }
 
